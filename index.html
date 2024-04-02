@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure_Shop</title>
+    <link rel="stylesheet" href="css/Stile.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <div class="logo">
+                <img src="Img/logo.png" alt="" class="logo__img" onclick="move_out()">
+                <div class="logo__menu"  onclick="theme()">
+                    <ul class="logo__list">
+                        <li class="logo__item">
+                            <h4 class="logo__title">
+                                Adventure Shop
+                            </h4>
+                        </li>
+                        <li class="logo__item logo__btn_theme">
+                            <img class="logo__btn-img" src="Img/f1.png" alt="f1" onclick="theme()">
+                        </li>
+                        <li class="logo__item" class="logo__btn_light">
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#покупка ключа">покупка ключа</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#новости">новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#FQA">FQA</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#контакты">контакты</a></li>
+                </ul>
+            </nav>
+            <div class="burger" onclick="hide()">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="video-bg">
+            <video autoplay muted loop id="video1">
+                <source src="video/Aurora - Run Away (Minecraft Cinematic).mp4">
+            </video>
+            <div class="video__content">
+                <button class="video__bt"><img id="pause" class="video__button" src="Img/pause.png" alt="pause"></button>
+                <button class="video__bt" onclick="mute()"><img id="sound" class="video__button" src="Img/sound.png" alt=""></button>
+                <button class="video__bt" onclick="prev()"><img  id="prev" class="video__button" src="Img/next.png" alt=""></button>
+                <button class="video__bt" onclick="next()"><img class="video__button" src="Img/next.png" alt=""></button>
+            </div>
+        </div>
+        <div class="container">
+            <h1>
+                Java key
+            </h1>
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                    <div class="itc-slider-items">
+                        <div class="itc-slider-item">
+                            <img src="Img/a1.jfif" alt="a1">
+                        </div>
+                        <div class="itc-slider-item">
+                            <img src="Img/aa1.jfif" alt="aa1">
+                        </div>
+                        <div class="itc-slider-item">
+                            <img src="Img/aa2.jfif" alt="aa2">
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+            </div>
+
+            <p>
+                После покупки вы получаете ключ к лицензии маикрафт Java editeon.
+            </p>
+            <button class="product__btn" onclick="in_cart()" id="a1">
+                КУПИТЬ
+            </button>
+            <p class="price__game">
+                1899 РУБ
+            </p>
+        </div>
+        <div class="basket">
+            <p class="price__basket">
+                0 РУБ
+            </p>
+            <button class="basket__BT">
+                <img src="Img/basket.png" alt=".
+                " class="basket__icon">
+            </button>
+        </div>
+    </main>
+    <footer>
+<div class="container container__footer">
+    <img src="Img/logo.png" alt="" class="logo__img">
+    <ul class="footer__list">
+        <li>
+            <img src="Img/Footer_1.png" alt="Footer_1">
+        </li>
+        <li>
+            <img src="Img/Footer_2.png" alt="Footer_2">
+        </li>
+        <li>
+            <img src="Img/Footer_3.png" alt="Footer_3">
+        </li>
+    </ul>
+</div>
+
+    </footer>
+    <script src="Script/button.js">
+
+    </script>
+    <script src="Script/itc-slider.js">
+
+    </script>
+    <script src="Script/logo.js">
+
+    </script>
+    <script src="Script/Dark_theme-Lidht_theme.js">
+
+    </script>
+    <script src="Script/Burger.js">
+
+    </script>
+    <script src="Script/player.js">
+        
+    </script>
+</body>
+
+</html>
